@@ -69,7 +69,7 @@ struct NewsTabView: View {
         } label: {
             Image(systemName: "fiberchannel")
                 .imageScale(.large)
-                .foregroundStyle(ColorScheme(.dark) == .dark ? Color(.black) : Color(.white))
+                .foregroundStyle(ColorScheme(.dark) == .dark ? Color(.white) : Color(.black))
         }
         
     }
@@ -77,4 +77,5 @@ struct NewsTabView: View {
 
 #Preview {
     NewsTabView()
+        .environmentObject(ArticleBookmarkViewModel())
 }
